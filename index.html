@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <form id="form">
+             <div class="form-group">
+                <h1 id="title" style="text-align: center; padding-bottom: 20px;">Manipulation Form</h1>
+           
+        <div id="rows">
+            <label for="first-name">FirstName :</label>
+            <input type="text" name="first name" id="first-name" class="form-control" placeholder="Enter your firstname" required >
+        </div>
+        
+        <div  id="rows">
+            <label>LastName :</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Enter your lastname" required>
+        </div>
+        
+        <div  id="rows">
+            <label>Email :</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div id="rows">
+           <p><label>Address :</label>
+           </p>  <textarea name="address" style="border-radius: 25px; width: 25vw; height: 15vh; padding: 15px;" id="address" placeholder="Enter your address" required></textarea>
+        </div>
+        <div id="rows">
+            <label for="pincode">Pincode :</label>
+            <input type="text"  class="form-control" id="pincode" placeholder="Enter your area pincode" required>
+        </div>
+        <div id="rows">
+            <label >Gender :</label>
+               <div>
+                    <input type="radio"  name="gender" id="male"  value="male">
+                    <label for="male">male</label>
+                 
+               </div>
+               <div>
+                <input type="radio"  name="gender" id="female"  value="female">
+                <label for="female">female</label>
+             
+           </div>
+           <div>
+            <input type="radio"  name="gender" id="trans-gender"  value="trans-gender">
+            <label for="trans-gender">trans-gender</label>
+         
+       </div>
+                
+        </div>
+        <div class="d-flex flex-column "  id="food">
+            <label >Choice of food :</label>
+                 <div class="d-flex flex-column m-4" id="foodRows">
+                    <div>
+                        <input type="radio" name="SouthIndianMeal" id="foods"  value="SouthIndianMeals">
+                        <label for="SouthIndianMeals">SouthIndianMeal</label>
+                     
+                   </div>
+                <div>
+                    
+                    <input type="radio" name="Biriyani" id="foods" value="Biriyani">
+                    <label for="Biriyani">
+                        Biriyani
+                    </label>
+                </div>
+                <div>
+                      <input type="radio" name="NorthIndianRoti" id="foods"  value="NorthIndianRoti">
+                      <label for="NorthIndianRoti">NorthIndianRoti</label>
+                  
+                </div>
+                <div>
+                      <input type="radio" name="Salads" id="foods"  value="Salads">
+                      <label for="Salads">Salads</label>
+                  
+                </div>
+                <div>
+                       <input type="radio" name="ChineseFood" id="foods"  value="ChineseFood">
+                       <label for="ChineseFood">ChineseFood</label>
+                 
+                </div>
+              <div>
+                <span style="color: rgb(217, 44, 44);">*Note: Select atleast 2 items</span>        
+               
+              </div>
+                  </div>
+        </div>
+        <div  id="rows">
+            <label >State :</label>
+            <input type="text" class="form-control" name="state" id="state" placeholder="Enter your state">
+        </div>
+        <div  id="rows">
+            <label >Country :</label>
+            <input type="text" class="form-control" name="country" id="country" placeholder="Enter your country">
+        </div>
+       <div class="d-flex justify-content-center"> 
+        <button type="submit" id="submit" class="btn btn-primary" >submit</button>  
+       </div>
+            </div>
+          </form>
+
+          
+    </div>
+    <div style="padding: 5%;">
+        <table id="myTable" class="table" required>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+          </table>
+    </div>
+    <div>
+        <p id="description"><span style="color: rgb(241, 66, 66);">*Note : </span>! Use this form to manipulate your details</p>
+
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>

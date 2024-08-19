@@ -1,0 +1,35 @@
+.container-fluid{
+    width: 100vh;
+    margin-top: 7vh;
+    padding: auto;
+    align-items: center;
+    box-shadow: 0px 1px 2px 2px rgb(123, 120, 120) ;
+    border-radius: 1.5%;
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        background-color: rgb(179, 179, 161);
+        max-width: 95vw;
+    }
+}
+div{
+    padding: 15px;
+    
+}
+input{
+    max-width: 100vw;
+}
+#subBtn{
+    
+    max-width: 20%;
+}
+#food{
+    display: flex;
+    flex-direction: column;
+}
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
